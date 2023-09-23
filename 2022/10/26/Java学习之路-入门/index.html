@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Java学习之路-入门 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Java学习之路-入门第一章 初始Java  @TOC  前言Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。   一、Java帝国的诞生？ Java是一门面向对象的编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java学习之路-入门">
+<meta property="og:url" content="https://leondragon7.github.io/Self-Study-Blog.github.io.git/2022/10/26/Java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Java学习之路-入门第一章 初始Java  @TOC  前言Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。   一、Java帝国的诞生？ Java是一门面向对象的编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7e411143eec6471684d357a2af332072.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1b099a5972964dbab1a5d91c6fbe0b66.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4c621708d8554c0abbadc5697de6afca.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/61d38c81fd2e4e2e9885ded2fffd174d.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1aa3bae71fbe4327a9f1139aec4150f4.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/fbb7a6f6f32646afb8ef5d74df34c0f3.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/8f14c68c8b0f41309a8023417aae817d.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/e7e77cf35d8144c0b54b782f77730c30.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/34e4815b017142749bf881e440bb125f.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/9cee09f286304825bc474959e95975de.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/cbd2e648f4c24006bed6af3e798e4d87.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4f6096c383284fd39294c2ed08c35017.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/079489e77abe41689ea16786fbd10155.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c320ff0a64c147d489a2aa4250d23bd5.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6a063c58425f4b15b44206fabddf44bc.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/696b3662fb49471ca09fd25b9cef7f3c.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7d98cb1ce57f4ae98a52adabf3532aa1.png">
+<meta property="article:published_time" content="2022-10-26T12:28:32.000Z">
+<meta property="article:modified_time" content="2023-09-23T13:39:06.136Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/7e411143eec6471684d357a2af332072.png">
+  
+    <link rel="alternate" href="/Self-Study-Blog.github.io.git/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/Self-Study-Blog.github.io.git/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/Self-Study-Blog.github.io.git/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/Self-Study-Blog.github.io.git/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/Self-Study-Blog.github.io.git/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/Self-Study-Blog.github.io.git/">Home</a>
+        
+          <a class="main-nav-link" href="/Self-Study-Blog.github.io.git/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/Self-Study-Blog.github.io.git/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://leondragon7.github.io/Self-Study-Blog.github.io.git"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Java学习之路-入门" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/Self-Study-Blog.github.io.git/2022/10/26/Java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-%E5%85%A5%E9%97%A8/" class="article-date">
+  <time class="dt-published" datetime="2022-10-26T12:28:32.000Z" itemprop="datePublished">2022-10-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Java学习之路-入门
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Java学习之路-入门"><a href="#Java学习之路-入门" class="headerlink" title="Java学习之路-入门"></a>Java学习之路-入门</h1><p>第一章 初始Java</p>
+<hr>
+<p>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">TOC</a></p>
+<hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Java语言是美国Sun公司（Stanford University Network），在1995年推出的高级的编程语言。所谓编程语言，是计算机的语言，人们可以使用编程语言对计算机下达命令，让计算机完成人们需要的功能。 </p>
+<hr>
+<h1 id="一、Java帝国的诞生？"><a href="#一、Java帝国的诞生？" class="headerlink" title="一、Java帝国的诞生？"></a>一、Java帝国的诞生？</h1><blockquote>
+<p>Java是一门面向对象的编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。</p>
+</blockquote>
+<h2 id="1-Java初生"><a href="#1-Java初生" class="headerlink" title="1.Java初生"></a>1.Java初生</h2><p>1995年的网页简单而粗糙，缺乏互动性。<br>图形界面的程序(Applet)</p>
+<p>Java 2 标准版(J2SE)：去占领桌面<br>Java 2 移动版(J2ME)：去占领手机<br>Java 2 企业版(J2EE)：去占领服务器</p>
+<h2 id="2-Java发展"><a href="#2-Java发展" class="headerlink" title="2.Java发展"></a>2.Java发展</h2><p>构造工具：Ant，Maven，Jekins<br>应用服务器：Tomcat，Jetty，Jboss，Websphere，weblogic<br>Web开发：Struts，Spring，Hibernate，myBatis<br>开发工具：Eclipse，Netbean，intellij idea，Jbuilder<br>……</p>
+<blockquote>
+<p>三高：高可用、高性能、高并发</p>
+</blockquote>
+<h1 id="二、Java特性和优势"><a href="#二、Java特性和优势" class="headerlink" title="二、Java特性和优势"></a>二、Java特性和优势</h1><blockquote>
+<p>简单性<br>面向对象<br>可移植性<br>高性能<br>分布式<br>动态性(反射)<br>多线程<br>安全性<br>健壮性</p>
+</blockquote>
+<h1 id="三、Java三大版本"><a href="#三、Java三大版本" class="headerlink" title="三、Java三大版本"></a>三、Java三大版本</h1><p>Write Once、Run Anywhere</p>
+<p>JavaSE：标准版（桌面程序，控制台开发……）<br>JavaME：嵌入式开发（手机，小家电……）[现今被淘汰]<br>JavaEE：E企业级开发（web前端，服务器开发）</p>
+<h1 id="四、JDK-JRE-JVM"><a href="#四、JDK-JRE-JVM" class="headerlink" title="四、JDK JRE JVM"></a>四、JDK JRE JVM</h1><p>JDK：Java Development Kit<br>JRE：Java Runtime Environment<br>JVM：JAVA Virtual Machine</p>
+<p><img src="https://img-blog.csdnimg.cn/7e411143eec6471684d357a2af332072.png" alt="SANJ"></p>
+<h1 id="五、搭建开发环境"><a href="#五、搭建开发环境" class="headerlink" title="五、搭建开发环境"></a>五、搭建开发环境</h1><h2 id="1-JDK下载卸载和安装"><a href="#1-JDK下载卸载和安装" class="headerlink" title="1.JDK下载卸载和安装"></a>1.JDK下载卸载和安装</h2><p>1.1  卸载JDK</p>
+<blockquote>
+<ol>
+<li>删除java的安装路径</li>
+<li>删除Java_HOME</li>
+<li>删除path下关于java的目录</li>
+<li>验证：Win + R -&gt; cmd -&gt; java -version</li>
+</ol>
+</blockquote>
+<p>1.2 安装JDK</p>
+<blockquote>
+<ol>
+<li>注册Oracle账号</li>
+<li>找到电脑对应的版本</li>
+<li>双击安装</li>
+<li>更改路径(<strong>记住</strong>)<br><img src="https://img-blog.csdnimg.cn/1b099a5972964dbab1a5d91c6fbe0b66.png"></li>
+</ol>
+</blockquote>
+<h2 id="2-配置环境变量"><a href="#2-配置环境变量" class="headerlink" title="2.配置环境变量"></a>2.配置环境变量</h2><blockquote>
+<p><strong>有些版本不需配置环境变量</strong><br>     1.我的电脑–&gt;右键–&gt;属性<br>     2.环境变量–&gt;系统变量–&gt;新建<br>     <img src="https://img-blog.csdnimg.cn/4c621708d8554c0abbadc5697de6afca.png" alt="环境变量"><br>    3.变量名：JAVA_HOME–&gt;变量值:JDK安装地址<br>    <img src="https://img-blog.csdnimg.cn/61d38c81fd2e4e2e9885ded2fffd174d.png" alt="新建系统变量"><br>    4.配置path变量(%%:表示应用)<br>    <img src="https://img-blog.csdnimg.cn/1aa3bae71fbe4327a9f1139aec4150f4.png" alt="在这里插入图片描述"><br><strong>注：没有jre文件可不用配置</strong><br>    <strong>扩展：Win + +：放大镜</strong><br>    5.测试JDK是否安装成功：Win+R–&gt;cmd–&gt;java -version<br>    <img src="https://img-blog.csdnimg.cn/fbb7a6f6f32646afb8ef5d74df34c0f3.png" alt="JDK VERSION"><br> JDK下载路径: <a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/#java8">(https://www.oracle.com/java/technologies/downloads/#java8)</a></p>
+</blockquote>
+<h2 id="3-JDK目录介绍"><a href="#3-JDK目录介绍" class="headerlink" title="3.JDK目录介绍"></a>3.JDK目录介绍</h2><p><img src="https://img-blog.csdnimg.cn/8f14c68c8b0f41309a8023417aae817d.png" alt="JDK目录"><br>1、bin目录</p>
+<blockquote>
+<p>javac.exe（Java编译器）— 将编写好的java文件（.java文件）编译成java<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E7%A0%81/9953683?fr=aladdin">字节码</a>文件（.class文件）<br>java.exe（Java运行工具）— 启动java<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA/104440?fr=aladdin">虚拟机</a>进程（JVM）,相当于一个操作系统，专门负责运行.class字节码文件<br><strong>重要掌握以下两个程序，其他的仅做了解</strong></p>
+</blockquote>
+<p>2、db目录</p>
+<blockquote>
+<p>该目录是一个小型数据库，在Java中引入了一个开源的数据库管理系统——JavaDB。因此在学习JDBC时无需安装额外的数据库软件，直接使用JavaDB即可。</p>
+</blockquote>
+<p>3、jre目录（Java Runtime Environment）<strong>有些版本没有这个目录，包含在斌目录下</strong></p>
+<blockquote>
+<p>该目录为Java运行时的环境<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%A0%B9%E7%9B%AE%E5%BD%95/6061330?fr=aladdin">根目录</a>，它包含Java虚拟机、运行时的类包、Java应用启动器和一个bin目录，但不包含开发环境中的开发工具。</p>
+</blockquote>
+<p>4、include</p>
+<blockquote>
+<p>存放开放JDK所使用的c语言的头文件。</p>
+</blockquote>
+<p>5、lib目录（library）</p>
+<blockquote>
+<p>Java类库或库文件，是开发工具使用的归档包文件。</p>
+</blockquote>
+<p>6、src.zip文件与<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/JavaFX/4231502?fr=aladdin">javafx</a>-src.zip文件</p>
+<blockquote>
+<p>存放JDK核心类源代码和JavaFX源代码，通过这两个文件可以查看Java基础类的源代码。</p>
+</blockquote>
+<h1 id="六、HelloWorld-及-简单语法规则"><a href="#六、HelloWorld-及-简单语法规则" class="headerlink" title="六、HelloWorld 及 简单语法规则"></a>六、HelloWorld 及 简单语法规则</h1><p>1、创建一个Java文件<br><img src="https://img-blog.csdnimg.cn/e7e77cf35d8144c0b54b782f77730c30.png" alt="Hello"><br>2、编写代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3、编译</p>
+<ul>
+<li>进入Hello.java文件的目录 –&gt; 在所在文件的目录输入cmd</li>
+<li>编译.class文件 –&gt;javac 文件名.java<br><img src="https://img-blog.csdnimg.cn/34e4815b017142749bf881e440bb125f.png" alt="javac"><br><img src="https://img-blog.csdnimg.cn/9cee09f286304825bc474959e95975de.png" alt=".class"><br>3.运行class文件<br><img src="https://img-blog.csdnimg.cn/cbd2e648f4c24006bed6af3e798e4d87.png" alt="run"><br><strong>注：可能会遇到的情况</strong></li>
+<li>每个单词的大小写不能出现问题，Java大小写是敏感的</li>
+<li>尽量使用英文</li>
+<li>文件名 和 类名必须保证一致，并且首字母大写（方法名小写）</li>
+<li>符号不能使用中文</li>
+</ul>
+<h1 id="七、Java-程序运行机制"><a href="#七、Java-程序运行机制" class="headerlink" title="七、Java 程序运行机制"></a>七、Java 程序运行机制</h1><ul>
+<li>编译型<br> 运行编译型语言是相对于解释型语言存在的，编译型语的首先将源代码编译生成机器语言，再由机器运行机器（二进制）。像C&#x2F;C++等都是编译型语言。<br> 编译型语言：程序在执行之前需要一个专门的编译过程，把程序编译成为机器语言的文件，运行时不需要重新翻译，直接使用编译的结果就行了。程序执行效率高，依赖编译器，跨平台性差些。如C、C++、Delphi等。</li>
+<li>解释型<br>解释型语言：程序不需要编译，程序在运行时才翻译成机器语言，每执行一次都要翻译一次。因此效率比较低。比如Basic语言，专门有一个解释器能够直接执行Basic程序，每个语句都是执行的时候才翻译。(在运行程序的时候才翻译，专门有一个解释器去进行翻译，每个语句都是执行的时候才翻译。效率比较低，依赖解释器，跨平台性好。)<br><strong>Java是同时具备上面两种特点</strong></li>
+</ul>
+<p>Java程序运行机制<br><img src="https://img-blog.csdnimg.cn/4f6096c383284fd39294c2ed08c35017.png" alt="Java运行机制"></p>
+<h1 id="八、IDEA安装和介绍"><a href="#八、IDEA安装和介绍" class="headerlink" title="八、IDEA安装和介绍"></a>八、IDEA安装和介绍</h1><h2 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h2><ol>
+<li>什么是IDE?<br> 1、编译器：用来编写代码，并且给代码着色，以方便阅读；<br> 2、调试器：观察程序的每一个运行步骤，发现程序的逻辑错误；<br> 3、项目管理工具：对程序涉及到的所有资源进行管理，包括源文件、图片、视频、第三方库等；<br> 4、漂亮的界面：各种按钮、面板、菜单、窗口等控件整齐排布，操作更方便。<br> 这些工具通常打包在一起，统一发布和安装，例如Visual Studio、Dev C++、Xcode、Visual C++ 6.0、C-Free、Code::Blocks 等，它们统称为集成开发环境（IDE，Integrated Development Environment）。</li>
+</ol>
+<p> <strong>在实际开发中，我一般也是使用集成开发环境，而不是单独地使用编译器。</strong></p>
+<ol start="2">
+<li>IDEA(IntelliJ IDEA)介绍<br>  IDEA是java编程语言的集成开发环境。IntelliJ在业界被公认为最好的Java开发工具，尤其在智能代码助手、代码自动提示、重构、JavaEE支持、各类版本工具(git、svn等)、JUnit、CVS整合、代码分析、 创新的GUI设计等方面的功能可以说是超常的。IDEA是JetBrains公司的产品，这家公司总部位于捷克共和国的首都布拉格，开发人员以严谨著称的东欧程序员为主。它的旗舰版（收费，限30天免费试用）还支持HTML，CSS，PHP，MySQL，Python等。社区版(免费)只支持Java,Kotlin等少数语言。</li>
+</ol>
+<p><strong>IDEA下载地址： <a target="_blank" rel="noopener" href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></strong></p>
+<h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h2><ol>
+<li>双击<strong>idealC-2020.2.4.exe</strong>安装文件</li>
+</ol>
+<p><img src="https://img-blog.csdnimg.cn/079489e77abe41689ea16786fbd10155.png" alt="idealC"></p>
+<ol>
+<li><p>点击下一步(Next &gt;)<br> <img src="https://img-blog.csdnimg.cn/c320ff0a64c147d489a2aa4250d23bd5.png" alt="NEXT"></p>
+</li>
+<li><p>选择文件目录，然后点击Next<br><img src="https://img-blog.csdnimg.cn/6a063c58425f4b15b44206fabddf44bc.png" alt="IDEA"></p>
+</li>
+<li><p>选择配置<br> <img src="https://img-blog.csdnimg.cn/696b3662fb49471ca09fd25b9cef7f3c.png" alt="配置"></p>
+</li>
+</ol>
+<p> <strong>1、Create Desktop Shortcut</strong>所指向的选项代表根据你的电脑选择对应的位数，这里我选择64位。<br> <strong>2、Create Associations</strong>所指向的选项代表关联文件，如果你打钩了，以后你双击电脑上的.java文件就会用它打开。<br> <strong>3、Download and install 32-bit JetBrains Runtime</strong>所指向的选项代表是否由JetBrain自动下载一个jre。<br> <strong>其余的我们暂不选择</strong></p>
+<ol start="4">
+<li>安装成功<br><img src="https://img-blog.csdnimg.cn/7d98cb1ce57f4ae98a52adabf3532aa1.png" alt="idea"></li>
+</ol>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上就是今天要讲的内容，本文仅仅简单学习了Java的入门知识！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://leondragon7.github.io/Self-Study-Blog.github.io.git/2022/10/26/Java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-%E5%85%A5%E9%97%A8/" data-id="clmw3rvd9000060vc03ht4rgc" data-title="Java学习之路-入门" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/Self-Study-Blog.github.io.git/2022/11/10/Java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Java语言概述
+        
+      </div>
+    </a>
+  
+  
+    <a href="/Self-Study-Blog.github.io.git/2022/09/18/Java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-%E9%A2%84%E7%A7%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java学习之路-预科</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Self-Study-Blog.github.io.git/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Self-Study-Blog.github.io.git/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Self-Study-Blog.github.io.git/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Self-Study-Blog.github.io.git/archives/2022/09/">September 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/Self-Study-Blog.github.io.git/2022/12/10/Java%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-%E8%BF%90%E7%AE%97%E7%AC%A6/">Java基础语法-运算符</a>
+          </li>
+        
+          <li>
+            <a href="/Self-Study-Blog.github.io.git/2022/11/27/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-%E5%8F%98%E9%87%8F/">Java基础语法-变量</a>
+          </li>
+        
+          <li>
+            <a href="/Self-Study-Blog.github.io.git/2022/11/10/Java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/">Java语言概述</a>
+          </li>
+        
+          <li>
+            <a href="/Self-Study-Blog.github.io.git/2022/10/26/Java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-%E5%85%A5%E9%97%A8/">Java学习之路-入门</a>
+          </li>
+        
+          <li>
+            <a href="/Self-Study-Blog.github.io.git/2022/09/18/Java%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF-%E9%A2%84%E7%A7%91/">Java学习之路-预科</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/Self-Study-Blog.github.io.git/" class="mobile-nav-link">Home</a>
+  
+    <a href="/Self-Study-Blog.github.io.git/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/Self-Study-Blog.github.io.git/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/Self-Study-Blog.github.io.git/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/Self-Study-Blog.github.io.git/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
